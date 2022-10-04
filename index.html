@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Ha duyen tuan anh</title>
+		<link rel="stylesheet" href="style.css">	
+	</head>
+	<body >	
+		<div class="container">
+		<header>
+			<a href="#"><img src="img/22.jfif" width="110px"; height="100px" alt=""></a>
+
+		</header>
+		<hr width="100%" size="8px" color="#F4EBEB"> 
+	
+	<h1 class ="font1" style="color:#1476b5;text-align:center ; font-size: 50px"; font-weight:100px > FIFA ONLINE 4 </h1>
+		<nav>
+			
+		<div>
+			<ul id="main-menu">
+                <li><a href="">Trang Chủ</a></li>
+                <li><a href="">Nạp So</a></li>
+                <li><a href="">Tin Tức</a>
+                    <ul class="sub-menu">
+                        <li><a href="">hot 2.1</a></li>
+                        <li><a href="">hot 2.2</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Download</a></li>
+                <li><a href="file:///D:/www/muc%202/index.html">Sự kiện</a></li>
+            </ul>
+		</div>
+		    <div class="search">
+				<input type="search" placeholder="Search...">
+				<button>Tìm Kiếm</button>
+		    </div>
+		</div>
+		<div id="mySidenav" class="sidenav">
+			<a href="https://www.facebook.com" id ="facebook">facebook</a>
+			<a href="https://www.instagram.com/" id="instag">instag</a>
+			<a href="https://id.zalo.me/account?continue=https%3A%2F%2Fchat.zalo.me%2F" id="zalo">zalo</a>
+		  </div>
+		  
+		  <div style="margin-left:80px;">
+		  </div>
+			
+				
+		</nav>
+		<marquee behavior="scroll" direction ="left" scrolldelay="0.001" vspace="50px" >
+		
+			<h2 class ="font1" style=" color: #DDC5C5; padding:10px">SỰ KIỆN DIỄN RA LỚN NHẤT TRONG NĂM CHỈ CÓ MỘT LẦN DUY NHẤT </h2>
+			
+		  </marquee>
+	    
+
+		<div id="slideshow-container">
+		
+			<div class="mySlides fade">
+		<a href="#"><img src="img/1.jpg" width="1500px"; height="800px" alt=""></a>
+		    </div>
+			<div class="mySlides fade">
+				<a href="#"><img src="img/2.png" width="1500px"; height="800px" alt=""></a>
+			</div>
+			<div class="mySlides fade">
+		<a href="#"><img src="img/3.jpg" width="1500px"; height="800px" alt=""></a>
+		    </div>
+	    </div>
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		<div style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
+		  </div>
+	 <script>
+			let slideIndex = 1;
+			showSlides(slideIndex);
+			
+			function plusSlides(n) {
+			  showSlides(slideIndex += n);
+			}
+			
+			function currentSlide(n) {
+			  showSlides(slideIndex = n);
+			}
+			
+			function showSlides(n) {
+			  let i;
+			  let slides = document.getElementsByClassName("mySlides");
+			  let dots = document.getElementsByClassName("dot");
+			  if (n > slides.length) {slideIndex = 1}    
+			  if (n < 1) {slideIndex = slides.length}
+			  for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";  
+			  }
+			  for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			  }
+			  slides[slideIndex-1].style.display = "block";  
+			  dots[slideIndex-1].className += " active";
+			}
+				
+			setInterval("mySlides fade",1000);
+		</script>
+			
+		
+		<article>
+			<h3>Sự kiện diễn ra </h3>
+			<div class="product">
+				<div class="card">
+					<a href="file:///D:/www/haduyentuananh/chitietsanpham/New%20folder/sukien.html">
+					<img src="img/trung thu.png" alt="áo" style="width:100%">
+					<div class="container">
+						<h4><b>Sự kiện Bốn mùa</b></h4>
+					</div>
+					</a>
+				</div>
+				<div class="card">
+
+					<a href="file:///D:/www/haduyentuananh/chitietsanpham/New%20folder%20(2)/cs.html"><img src="img/quockhanh.png" alt="áo" style="width:100%">
+					<div class="container">
+						<h4><b>Sự kiện Quốc khánh</b></h4>
+					</div>
+					</a>
+				</div>
+				<div class="card">
+					<a href="file:///D:/www/haduyentuananh/chitietsanpham/muc%202/index.html">
+					<img src="img/SKDB-100-QK2-9_1080-320x320.png" alt="áo" style="width:100%">
+					<div class="container">
+						<h4><b>Sự kiện Chuyển Sò</b></h4>
+					</div>
+					</a>
+				</div>
+				
+			
+
+		</article>
+		<footer>
+			<div id="footer" style="background:#E6E6E6; color: darkblue; text-align: center; ">
+				<p> Design by: Hà Duyên Tuấn Anh</p>
+				<h4> Phone:038279189</h4>
+				</div>
+
+		</footer>
+	</div>
+	<script type="text/javascript">
+		function hide_float_right() {
+			var content = document.getElementById('float_content_right');
+			var hide = document.getElementById('hide_float_right');
+			if (content.style.display == "none")
+			{content.style.display = "block"; hide.innerHTML = '<a href="javascript:hide_float_right()"> Tắt quảng cáo [X]</a>'; }
+				else { content.style.display = "none"; hide.innerHTML = '<a href="javascript:hide_float_right()">Sản Phẩm Khuyến Mại 75%</a>';
+			}
+			}
+			function myF(){
+			  onl.style.display = "block";
+			  
+			}
+			function un(){
+				onl.style.display = "none";
+			}
+		</script>
+			
+		<style>
+		.float-ck { position: fixed; bottom: 30px; z-index: 9000}
+		* html .float-ck {position:absolute;bottom:auto;top:expression(eval (document.documentElement.scrollTop+document.docum entElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0))) ;}
+		#float_content_right {border: 3px solid #01AEF0;}
+		#hide_float_right {text-align:right; font-size: 11px;}
+		#hide_float_right a {background: #01AEF0; padding: 2px 4px; color: #FFF;}
+		</style>
+		
+			<div class="float-ck" style="right: 0px">
+		<div id="hide_float_right">
+		<a href="javascript:hide_float_right()">Tắt quảng cáo[X]</a></div>
+		<div id="float_content_right">
+		<!-- Start quang cao-->
+		<img src="img/quang cao.png">
+		<!-- End quang cao -->
+		</div>
+		</div>
+		<!-- QUẢNG CÁO GIỮA -->
+			<div id="onl" style="position: fixed; bottom: 120px; top: 80px; left: 300px; z-index: 100; display: block;">
+				<div style="backgroud-color:black; width:1000px; height=200px;">
+					<a href="javascript:un()" style="color:#F00;"> Tắt quảng cáo [X]</a>
+					<img src="img/quangcao2.png" width="450" height="450">
+				</div>
+			</div>
+		<!-- KẾT THÚC QUẢNG CÁO GIỮA -->
+	</body>
+</html>
